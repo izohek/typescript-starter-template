@@ -1,0 +1,35 @@
+{
+  "name": "typescript-starter-template",
+  "version": "1.0.0",
+  "description": "Typescript starter template",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "npx tsc",
+    "lint": "npx eslint src/* tests/*",
+    "pretest": "npm run build",
+    "test": "npx jest"
+  },
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "/dist/src"
+  ],
+  "keywords": [
+    "typescript",
+    "template",
+    "starter"
+  ],
+  "author": "izohek <izohek@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "jest": "^29.5.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  }
+}
